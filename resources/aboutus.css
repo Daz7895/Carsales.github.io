@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center elements */
+    justify-content: space-between; /* Distribute elements horizontally */
+}
+nav {
+    text-align: right;
+}
+
+/* Add a class to style the title separately */
+.title {
+    margin: 0;
+    text-align: center;
+}
+.about-us{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.about-us p {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+nav ul li{ 
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 20px;
+    text-align: center;
+  }
+
+  nav ul li a{ 
+    color: white; 
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  nav ul li a::after{ 
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -6px; 
+    transition: 0.25s;
+  }
+  nav ul li a:hover::after{
+    width: 100%;  
+  } 
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* Social Media Icons Styles */
+.social-media-icons {
+  margin: 20px 0;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #333;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.social-icon.facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.social-icon.instagram {
+  background-color: #e4405f;
+  color: #fff;
+}
+
+.social-icon:hover {
+  background-color: #ddd;
+}
